@@ -4,7 +4,7 @@
 
 ### 1.在Windows中下载并安装git
 
--git官网：<https://git-scm.com/downloads>
+git官网：<https://git-scm.com/downloads>
 
 ### 2.配置用户信息
 
@@ -40,8 +40,33 @@ git config -h
 ### 1.在现有目录中初始化git仓库
 
 > 1.在项目目录中，通过鼠标右键打开 “git bush”
-> 2、执行 *git init* 命令
+
+>  2、执行 **git init** 命令
 
 ### 2.检查文件的状态
 
+>可以使用 **git status** 命令行查看文件处于什么状态。
 
+```bash
+git status
+```
+>用精简的方式显示文件状态
+```bash
+git status -s // -s 是 --short 的简写形式
+```
+### 3.跟踪新文件
+
+>使用命令 **git add** 开始跟踪一个文件
+
+```bash
+git add 文件名 // 你想添加的文件的名字
+
+git add .  // 一次性将文件加入到暂存区
+```
+### 4.提交更新
+
+> 将暂存区的文件提交到Git仓库
+
+```bash
+git commit -m "提交消息（一般是文件的备注信息）"
+```
